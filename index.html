@@ -1,31 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	
-<title>sumas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumas</title>
 </head>
+
 <body>
-         <label> valor 1</label><input type="number" name="" id="valor1" step="0.001 "oninput="calcular()"><br><br>
-		
-		<label> valor 2</label><input type="number" name="" id="valor2" step="0.001 "oninput="calcular()"><br><br>
-		
-		<label> total:</label><input type="number" name="" id="total" step="0.001 "><br><br>
-		<a href="index.html"><button class="atr">atras</button></a>
+    <script type="text/javascript">
+       var m=0;
+        x = [];
+        function suma() {
+        var n1= Number(document.getElementById("nm1").value);
+        var n2= Number(document.getElementById("nm2").value);
+        var r=n1+n2;
+        document.getElementById('resultado').value=r;
+        x.push(r);
+        res.value=x.length;
+        document.getElementById('cuenta').value=x;
 
-	</body>
 
-	<script type="text/javascript">
+        }
 
-		function calcular() {
-		try{
-
-		var a = parseFloat(document.getElementById("valor1").value) || 0;
-		b=parseFloat(document.getElementById("valor2").value) || 0;
-
-		document.getElementById("total").value =a + b;
-		 } catch (e) {}
-		}
-
-	</script>
 </script>
-	</html>
+<form>
+	<a href="https://juan-felipe12.github.io/tecnologia1/index.html"><button class="atr">Atras</button></a>
+        <label >Calculadora</label><br>
+        <input type="text" id="nm1" placeholder="Numero 1" ><br><br>
+        <input type="text" id="nm2" placeholder="Numero 2" ><br><br>
+        <br>
+        <br>
+        <input type="button" value="Ingresar" onclick="suma();">
+        <br>
+        <br>
+        <label >Resultado :</label><br>
+        <input type="" id="resultado" value="">
+        <input type="" id="cuenta" value="">
 
+    </form>
+
+</body>
+</html>
