@@ -1,0 +1,31 @@
+<html>
+<head>
+	
+<title>sumas</title>
+</head>
+<body>
+         <label> valor 1</label><input type="number" name="" id="valor1" step="0.001 "oninput="calcular()"><br><br>
+		
+		<label> valor 2</label><input type="number" name="" id="valor2" step="0.001 "oninput="calcular()"><br><br>
+		
+		<label> total:</label><input type="number" name="" id="total" step="0.001 "><br><br>
+
+	</body>
+
+	<script type="text/javascript">
+
+		function calcular() {
+		try{
+
+		var a = parseFloat(document.getElementById("valor1").value) || 0;
+		b=parseFloat(document.getElementById("valor2").value) || 0;
+
+		document.getElementById("total").value =a + b;
+		 } catch (e) {}
+		}
+
+	</script>
+</script>
+	</html>
+
+
